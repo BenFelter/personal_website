@@ -14,6 +14,8 @@ function preload() {
     initializeSprites();
   });
 
+  pixelifyFont = loadFont('path/to/Sans.ttf');
+
   // Load map images
   maps.push(loadImage('home_pixel_map.png', () => console.log('Loaded home_pixel_map.png')));
   maps.push(loadImage('rowing_pixel_map.png', () => console.log('Loaded rowing_pixel_map.png')));
@@ -147,9 +149,14 @@ function draw() {
 }
 
 function displayControls() {
-  fill(0);
+  fill(255, 255, 255, 200); // Semi-transparent white
+  noStroke();
+  rect(5, 80, 250, 140, 10); // Rounded corners (last parameter is the radius)
+
+  fill(0); // Black text color
   textSize(20);
   textAlign(LEFT);
+  textFont(pixelifyFont); // Apply the loaded font
   text("Controls:", 10, 100);
   text("Move left: A", 10, 130);
   text("Move right: D", 10, 160);
