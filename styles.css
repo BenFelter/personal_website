@@ -46,7 +46,7 @@ body {
 #dialogueBox {
   display: none;
   position: absolute;
-  left: 50%;
+  left: 45%;
   margin: 5%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.8);
