@@ -150,10 +150,11 @@ function displayControls() {
   fill(255);
   textSize(20);
   textAlign(LEFT);
-  text("Controls:", 10, 100);
-  text("Move left: A", 10, 130);
-  text("Move right: D", 10, 160);
-  text("Jump: W or Space", 10, 190);
+  let baseY = height - 120; // Base y-coordinate for the first line of text
+  text("Controls:", 15, baseY);
+  text("Move left: A", 15, baseY + 30);
+  text("Move right: D", 15, baseY + 60);
+  text("Jump: W or Space", 15, baseY + 90);
 }
 
 function updateCamera() {
