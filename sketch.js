@@ -14,7 +14,7 @@ function preload() {
     initializeSprites();
   });
 
-  pixelifyFont = loadFont('path/to/Sans.ttf');
+  textFont('Pixelify Sans');
 
   // Load map images
   maps.push(loadImage('home_pixel_map.png', () => console.log('Loaded home_pixel_map.png')));
@@ -149,18 +149,17 @@ function draw() {
 }
 
 function displayControls() {
-  fill(255, 255, 255, 200); // Semi-transparent white
+  fill('rgba(255, 255, 255, 0.8)'); // Semi-transparent white
   noStroke();
-  rect(5, 80, 250, 140, 10); // Rounded corners (last parameter is the radius)
+  rect(5, 80, 220, 140, 10); // Rounded corners with a radius of 10
 
   fill(0); // Black text color
   textSize(20);
   textAlign(LEFT);
-  textFont(pixelifyFont); // Apply the loaded font
-  text("Controls:", 10, 100);
-  text("Move left: A", 10, 130);
-  text("Move right: D", 10, 160);
-  text("Jump: W or Space", 10, 190);
+  text("Controls:", 15, 110); // Adjust the text positions as needed
+  text("Move left: A", 15, 140);
+  text("Move right: D", 15, 170);
+  text("Jump: W or Space", 15, 200);
 }
 
 function updateCamera() {
