@@ -14,8 +14,7 @@ body {
 
 #gameContainer {
   position: relative;
-  min-height: 400px;
-  min-width: 400px;
+  height: 100vh;
 }
 
 
