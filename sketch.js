@@ -150,7 +150,7 @@ function displayControls() {
   fill(255);
   textSize(20);
   textAlign(LEFT);
-  let baseY = height - 120; // Base y-coordinate for the first line of text
+  let baseY = height - 400; // Base y-coordinate for the first line of text
   text("Controls:", 15, baseY);
   text("Move left: A", 15, baseY + 30);
   text("Move right: D", 15, baseY + 60);
