@@ -6,7 +6,7 @@ class Player {
     this.acc = createVector(0, 0);
     this.width = width;
     this.height = height;
-    this.maxVel = 4;
+    this.maxVel = 8;
     this.direction = { left: false, right: false };
     this.onGround = false;
     this.state = 'stand'; // stand, run
