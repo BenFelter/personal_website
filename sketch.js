@@ -140,10 +140,10 @@ function draw() {
   // Debug information
   fill(0);
   noStroke();
-  text(`Player X: ${player.pos.x}`, 10, 20);
-  text(`Player Y: ${player.pos.y}`, 10, 40);
-  text(`Camera X: ${cam.x}`, 10, 60);
-  text(`Camera Y: ${cam.y}`, 10, 80);
+  // text(`Player X: ${player.pos.x}`, 10, 20);
+  // text(`Player Y: ${player.pos.y}`, 10, 40);
+  // text(`Camera X: ${cam.x}`, 10, 60);
+  // text(`Camera Y: ${cam.y}`, 10, 80);
 }
 
 function displayControls() {
